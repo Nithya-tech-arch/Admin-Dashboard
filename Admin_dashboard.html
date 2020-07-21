@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard</title>
+    <!-- google font icons --->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+    <!-- Compiled and minified CSS for materialize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+    main {
+      padding-left: 320px;
+    }
+
+    .nav-wrapper{
+      color: black;
+    }
+
+    .sidenav-container{
+      width: 30px;
+    }
+
+    nav .badge{
+      position: relative;
+      top: 0px;
+      right: 40px;
+      
+    }
+
+    .person{
+      position: relative;
+      right: 50px;
+    }
+
+    .move{
+      margin-top: 60px;
+    }
+
+    .moves{
+      margin-top: 20px;
+    }
+
+    .img1{
+      margin-top: -80px;
+      margin-left: -10px;
+      border-radius: 5px;
+    }
+
+    .card-action{
+      font-size: 10px;
+    }
+
+    .movess{
+      margin-top: 70px;
+      border-radius: 5px;
+    }
+
+    .movs{
+      margin-top: -50px;
+      border-radius: 5px;
+    }
+
+    .graph-image{
+      margin-top: -25px;
+      margin-left: 20px;
+      border-radius: 5px;
+    }
+
+    .cols{
+      margin-top: 100px;
+      margin-left: -10px;
+      border-radius: 5px;
+    }
+
+    .task{
+      margin-top: -20px;
+    }
+        
+    .bar{
+      margin-top: 100px;
+      border-radius: 5px;
+    }
+
+    .rain{
+      margin-top: -20px;
+    }
+
+    .footer-1{
+      color: black;
+      font-size: 12px;
+    }
+
+    .page-footer{
+      margin-top: 100px;
+    }
+
+       
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0px;
+      }
+    }
+
+    </style>
+</head>
+
+<body>
+  
+    <nav>
+        <div class="nav-wrapper transparent">
+          <a href="#!" class="brand-logo center">Dashboard</a>
+    <!--------- sidenav Trigger ------->
+            <a href="#" data-target="slide-out" class="sidenav-trigger left show-on-large"><i class="material-icons">menu</i></a>
+              <ul class="left hide-on-med-and-down right">
+    <!--Search bar-->
+                <li>    
+                  <div class="center row">
+                    <div class="col s12 " >
+                     <div class="row" id="topbarsearch">
+                       <div class="input-field col s6 s12 red-text">
+                         <i class="red-text material-icons prefix">search</i>
+                         <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete red-text" >
+                        </div>
+                      </div>
+                    </div>
+                  </div>          
+                </li>                 
+               
+                <li><a href="#">
+                  <i class="material-icons">dashboard</i>
+                </a></li>
+                <li><a href="#">
+                  <i class="material-icons">notifications</i>
+                </a></li>
+                <li><span class="badge white-text pink">5</span></li>
+        
+                <li><a href="#">
+                <i class="material-icons person">person</i>
+                </a></li>
+              </ul>
+        </div>
+      </nav>
+    <!--------- sidenav content ------->
+      <ul id="slide-out" class="sidenav sidenav-fixed z-depth-3"  style="margin: 0" style="padding: 0" >
+        <li><div class="user-view center-align blue white-text">CREATIVE TIM
+      
+          <div class="sidenav-container right-align">
+            <li><a href="#!"><i class="material-icons blue-text">dashboard</i>Dashboard</a></li>
+            <li><a href="#!"><i class="material-icons blue-text">person</i>User Profile</a></li>
+            <li><a href="#!"><i class="material-icons blue-text">assessment</i>Table List</a></li>
+            <li><a href="#!"><i class="material-icons blue-text">subject</i>Typography</a></li>
+            <li><a href="#!"><i class="material-icons blue-text">insert_emoticon</i>Icons</a></li>
+            <li><a href="#!"><i class="material-icons blue-text">location_on</i>Maps</a></li>
+            <li><a href="#!"><i class="material-icons blue-text">notifications</i>Notifications</a></li>
+            <li><a href="#!"><i class="material-icons blue-text">language</i>RTL Support</a></li>
+            <li><a href="#!"><i class="material-icons blue-text">upgrade</i class="blue-text">Upgrade To Pro</a></li>
+          </div>
+        </div>
+        </li>
+      </ul>
+    
+<!-------------------- Content part started ------------------->
+<!--------------- Add all content here ------------------------>
+
+<!---------Cards- with- icons------->
+
+      <div class="container-card wrapper">
+          <div class="row">
+              <div class="col s12 l2 offset-l3 move">
+                 <div class="card  z-depth-3">
+                    <div class="card-content">
+                      <a href="">
+                        <i class="large material-icons orange darken-1 white-text img1 z-depth-3">
+                        content_copy
+                        </i>
+                      </a>
+                      <p class="card-para right-align">Used space</p>
+                        <span class="card-title right-align">49/50 GB</span>
+                    </div>
+                  <div class="card-action">
+                    <a href="#">
+                        <i class="very small material-icons red-text">warning</i>
+                    </a>
+                    <a href="#" class="red-text">get space..</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col s12 l2 move">
+              <div class="card z-depth-3">
+                <div class="card-content">
+                    <a href="">
+                      <i class="large material-icons green white-text img1 z-depth-3">
+                      apartment
+                      </i>
+                    </a>
+                    <p class="right-align">Revenue</p>
+                      <span class="card-title right-align">$34,245</span>
+                </div>
+                <div class="card-action">
+                  <a href="#">
+                      <i class="small material-icons red-text">date_range</i>
+                  </a>
+                  <a href="#" class="red-text lower">last 24 hrs</a>
+              </div>
+            </div>
+          </div>
+
+              <div class="col s12 l2 moves">
+                <div class="card  z-depth-3">
+                  <div class="card-content">
+                    <a href="">
+                      <i class="large material-icons red white-text img1 z-depth-3">
+                        assignment_late
+                      </i>
+                    </a>
+                    <p class="right-align">Fixed Issues</p>
+                     <span class="card-title right-align">75</span>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">
+                      <i class="small material-icons red-text">local_offer</i>
+                    </a>
+                    <a href="#" class="red-text lower">from Github</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 l2 moves">
+                <div class="card  z-depth-3">
+                  <div class="card-content">
+                    <a href="">
+                      <i class="large material-icons blue white-text img1 z-depth-3">
+                        follow_the_signs
+                      </i>
+                    </a>
+                    <p class="right-align">Followers</p>
+                      <span class="card-title right-align">+245</span>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">
+                      <i class="small material-icons red-text">update</i>
+                    </a>
+                    <a href="#" class="red-text lower">Just updated</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+    <!---Card with maps-->
+      
+      <div class="card-map-container">
+        <div class="row">
+          <div class="col s12 l3 offset-l3 movess">
+            <div class="card z-depth-3">
+              <div class="movs" >
+                <img src="graph-1.png" class="graph-image z-depth-3"  alt="">
+              </div>
+              <div class="card-content">
+                <span class="card-title pink-text text-darken-4">Daily Sales</span>
+                  <p>55% increase in today's sales
+                  </p>
+              </div>
+            <div class="card-action">
+              <a href="#">
+                <i class="small material-icons black-text">schedule</i>
+              </a>
+              <a href="#" class="black-text lower">Updated 4mins ago</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 l3 movess">
+          <div class="card z-depth-3">
+            <div class="movs">
+                <img src="graph-2.png" class="graph-image z-depth-3"  alt="">
+            </div>
+            <div class="card-content">
+              <span class="card-title pink-text text-darken-4">Email Subscriptions</span>
+                <p>Last Campaign Performance
+                </p>
+            </div>
+            <div class="card-action">
+              <a href="#">
+                <i class="small material-icons black-text">schedule</i>
+              </a>
+              <a href="#" class="black-text lower">Campaign sent 2days ago</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 l3 movess">
+          <div class="card z-depth-3">
+            <div class="movs">
+              <img src="graph-1.png" class="graph-image z-depth-3" alt="">
+            </div>
+            <div class="card-content">
+              <span class="card-title pink-text text-darken-4">Completed Tasks</span>
+                <p>Last Campaign Performance
+                </p>
+            </div>
+            <div class="card-action">
+              <a href="#">
+                <i class="small material-icons black-text">schedule</i>
+              </a>
+              <a href="#" class="black-text lower">Campaign sent 2days ago</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+              
+    <!---Collections-->
+    <div class="collection-container">
+      <div class="row">
+        <div class="col s12 l5 offset-l3 cols z-depth-3">
+          <ul class="collection task z-depth-3">
+            <li class="collection-header blue ">Tasks: <a href="#" class="btn-small indigo">
+              <span>bugs</span>
+                <i class="material-icons left">bug_report</i>
+                </a>
+                <a href="#" class="btn-small indigo">
+                  <span>website</span>
+                    <i class="material-icons left">
+                      code</i>
+                </a>
+                <a href="#" class="btn-small indigo">
+                  <span>server</span>
+                  <i class="material-icons left">
+                  dns</i>
+                </a>
+            </li>
+          </ul>
+              
+             
+               
+            <li class="collection-item">
+              <label>
+                <input type="checkbox">
+                  <span class="collection-title black-text">Sign contract for"What are conference organizers</br> afraid of?"</span>
+              </label>
+              <a href="" class="secondary-content">
+                <i class="material-icons red-text">clear</i>
+              </a>
+              <a href="" class="secondary-content">
+                <i class="material-icons purple-text">create</i>
+              </a>
+            </li>
+
+            <li class="collection-item">
+              <label> 
+                <input type="checkbox">
+                  <span class="collection-title black-text">Lines from Great Russian Literature? E-mails from</br> my boss?</span>
+              </label>
+              <a href="" class="secondary-content">
+                <i class="material-icons red-text">clear</i>
+              </a>
+              <a href="" class="secondary-content">
+                <i class="material-icons purple-text">create</i>
+              </a>
+            </li>
+
+            <li class="collection-item">
+              <label> 
+                <input type="checkbox">
+                  <span class="collection-title black-text">Flooded: One year later, assesing what was lost and</br> what was found
+                  when a ravaging rain swept through</br> metro Detroit </span>
+              </label>
+              <a href="" class="secondary-content">
+                <i class="material-icons red-text">clear</i>
+              </a>
+              <a href="" class="secondary-content">
+                <i class="material-icons purple-text">create</i>
+              </a>
+            </li>
+
+            <li class="collection-item">
+              <label> 
+                <input type="checkbox">
+                  <span class="collection-title black-text">Create 4 invisible User Experiences you Never Knew</br> About:- </span>
+              </label>
+              <a href="" class="secondary-content">
+                <i class="material-icons red-text">clear</i>
+              </a>
+              <a href="" class="secondary-content">
+                <i class="material-icons purple-text">create</i>
+              </a>
+            </li>
+          </div>
+
+          <div class="col s12 l3 bar  z-depth-3">
+            <ul class="collection rain z-depth-3">
+              <li class="collection-header blue white-text emp z-depth-3">Employee stats</br>New employee on 15th sept,2016.</li>
+            </ul>
+              <table>
+                <thead>
+                  <tr>
+                    <th class="red-text">ID</th>
+                    <th class="red-text">Name</th>
+                    <th class="red-text">Salary</th>
+                    <th class="red-text">Country</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Dakota rice</td>
+                    <td>$36.738</td>
+                    <td>Niger</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Minerva hooper</td>
+                    <td>$23.789</td>
+                    <td>Curacao</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Sage</td>
+                    <td>$56.142</td>
+                    <td>Netherlands</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Philip</td>
+                    <td>$38.735</td>
+                    <td>Korea,South</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+    <!---footer-->
+      <footer class="page-footer transparent">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 l2 offset-l2 footer-1">
+              <a href="#" class="black-text">CREATIVE TIM</a>
+            </div>
+            <div class="col s12 l2 footer-1">
+              <a href="#" class="black-text">ABOUT US</a>
+            </div>
+            <div class="col s12 l2 footer-1">
+              <a href="#" class="black-text">BLOG</a>
+            </div>
+            <div class="col s12 l2 footer-1">
+              <a href="#" class="black-text">LICENSES</a>
+            </div>
+            <div class="col s12 l2 footer-1">
+              <a href="#" class="black-text">&copy; 2020,made by creative tim for a better web.</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-------------------- Content part finished ------------------->
+    <!--jQUERY-->
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
+
+    <!-- Initialize SIdenav -->
+    <script>
+      $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+  });
+    </script>
+  </body>
+</html>
